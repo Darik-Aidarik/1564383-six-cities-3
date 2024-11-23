@@ -10,7 +10,7 @@ export class CommandParser {
         parsedCommand[argument] = [];
         currentCommand = argument;
       } else if (currentCommand && argument) {
-        parsedCommand[argument].push(argument);
+        parsedCommand[currentCommand].push(argument);
       }
     }
     return parsedCommand;
